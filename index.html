@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Validation Button</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="vh-100 d-flex align-items-center justify-content-center">
+        <div>
+            <h1 class="text-center mb-4">Moving<br>Validation Button</h1>
+            <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" id="email" onkeyup="checkEmail()">
+                <div class="invalid-feedback">
+                    Enter a valid email address.
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="password" id="password" onkeyup="checkPassword()">
+                <div class="invalid-feedback">
+                    Minimum 8 characters and mix letter and number.
+                </div>
+            </div>
+            <div>
+                <button type="button" id="go" class="btn btn-primary" onmouseover="gooo()" onclick="submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
